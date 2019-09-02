@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>List GitHubEvents</title>
+</head>
+<body>
+	{% for git in gits %}
+		<h1>{{ git.type }}</h1>
+		<h3>{{git.actor.display_login}}</h3>
+		<img src="{{git.actor.avatar_url}}" alt="avatar">
+		<h3>{{git.repo.name}}</h3>
+		<h1>--------------</h1>
+	    <br>
+	    <br>
+	    </form>
+	
+	{% endfor %}
+</body>
+</html>
